@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Layout for the final results screen -->
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/resultLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.quizapptask.ResultActivity">
+
+    <!-- Congratulations Text (displays "Congratulations [Name]!") -->
+    <TextView
+        android:id="@+id/congratsTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/congratulations_name"
+        android:textSize="22sp"
+        android:textColor="#4E4C4C"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="90dp" />
+
+    <!-- Final Score Text -->
+    <TextView
+        android:id="@+id/finalScoreTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/final_score"
+        android:textSize="24sp"
+        android:textColor="#4E4C4C"
+        app:layout_constraintTop_toBottomOf="@id/congratsTextView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="50dp" />
+
+    <!-- "Take New Quiz" Button -->
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/newQuizButton"
+        android:layout_width="260dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/button_background"
+        android:backgroundTint="@null"
+        android:text="@string/new_quiz_button"
+        android:textColor="#686464"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/finalScoreTextView" />
+
+    <!-- "Finish" Button -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/finishButton"
+        android:layout_width="260dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="52dp"
+        android:background="@drawable/button_background"
+        android:backgroundTint="@null"
+        android:text="@string/finish_button"
+        android:textColor="#686464"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/newQuizButton" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

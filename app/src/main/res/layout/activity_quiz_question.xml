@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Layout for the quiz question screen -->
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/quizQuestionLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.quizapptask.QuizQuestionActivity">
+
+    <!-- Welcome text (only for the first question; hide after) -->
+    <TextView
+        android:id="@+id/welcomeTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/welcome_name"
+        android:textSize="22sp"
+        android:textColor="#4E4C4C"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="24dp" />
+
+    <!-- Horizontal chain: Progress Bar and Question Number Text -->
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="@android:style/Widget.ProgressBar.Horizontal"
+        android:layout_width="272dp"
+        android:layout_height="15dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="20dp"
+        android:progress="0"
+        app:layout_constraintStart_toEndOf="@+id/questionNumberTextView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/welcomeTextView" />
+
+    <TextView
+        android:id="@+id/questionNumberTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:text="@string/progress_score"
+        android:textColor="#4E4C4C"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@id/progressBar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/progressBar" />
+
+    <!-- Question Text -->
+    <TextView
+        android:id="@+id/questionTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/quiz_question"
+        android:textSize="20sp"
+        android:textColor="#4E4C4C"
+        app:layout_constraintTop_toBottomOf="@id/progressBar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="24dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp" />
+
+    <!-- Answer Option Button 1 -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/answerButton1"
+        android:layout_width="260dp"
+        android:layout_height="55dp"
+        android:background="@drawable/button_background"
+        android:text="@string/answer_1"
+        android:textColor="#686464"
+        android:textSize="24sp"
+        android:backgroundTint="@null"
+        app:layout_constraintTop_toBottomOf="@id/questionTextView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="60dp" />
+
+    <!-- Answer Option Button 2 -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/answerButton2"
+        android:layout_width="260dp"
+        android:layout_height="55dp"
+        android:background="@drawable/button_background"
+        android:text="@string/answer_2"
+        android:textColor="#686464"
+        android:textSize="24sp"
+        android:backgroundTint="@null"
+        app:layout_constraintTop_toBottomOf="@id/answerButton1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="30dp" />
+
+    <!-- Answer Option Button 3 -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/answerButton3"
+        android:layout_width="260dp"
+        android:layout_height="55dp"
+        android:background="@drawable/button_background"
+        android:text="@string/answer_3"
+        android:textColor="#686464"
+        android:textSize="24sp"
+        android:backgroundTint="@null"
+        app:layout_constraintTop_toBottomOf="@id/answerButton2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="30dp" />
+
+    <!-- Submit/Next Button -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/submitNextButton"
+        android:layout_width="260dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/button_background"
+        android:backgroundTint="@null"
+        android:text="@string/submit_button"
+        android:textColor="#686464"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/answerButton3" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

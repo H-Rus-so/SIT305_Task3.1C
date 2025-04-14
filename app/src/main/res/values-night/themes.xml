@@ -1,0 +1,17 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme using Material3 -->
+    <style name="Base.Theme.QuizAppTask" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Override both the Android and Material button style attributes -->
+        <item name="android:buttonStyle">@style/CustomButtonStyle</item>
+        <item name="materialButtonStyle">@style/CustomButtonStyle</item>
+    </style>
+
+    <style name="Theme.QuizAppTask" parent="Base.Theme.QuizAppTask" />
+
+    <!-- Custom button style to remove background tint -->
+    <style name="CustomButtonStyle" parent="Widget.Material3.Button">
+        <!-- Remove the default background tint -->
+        <item name="android:backgroundTint">@null</item>
+        <item name="backgroundTint">@null</item>
+    </style>
+</resources>

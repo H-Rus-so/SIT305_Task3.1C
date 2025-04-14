@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">SIT305 Quiz App</string>
+    <string name="startbutton">START</string>
+    <string name="enter_your_name">Enter your name:</string>
+    <string name="app_title">SIT305 Quiz App</string>
+    <string name="congratulations_name">Congratulations [Name]!</string>
+    <string name="final_score">Your Final Score: 0/5</string>
+    <string name="new_quiz_button">Take New Quiz</string>
+    <string name="finish_button">Finish</string>
+    <string name="welcome_name">Welcome [Name]!</string>
+    <string name="progress_score">1/5</string>
+    <string name="quiz_question">Question will appear here</string>
+    <string name="answer_1">Answer 1</string>
+    <string name="answer_2">Answer 2</string>
+    <string name="answer_3">Answer 3</string>
+    <string name="submit_button">Submit</string>
+</resources>
